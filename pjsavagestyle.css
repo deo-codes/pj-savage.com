@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+font-family: 'Gloria Hallelujah', cursive;
+}
+
+section{
+  padding:100px;
+}
+
+.banner{
+  position: relative;
+  min-height: 100vh;
+  background: url('https://i.ibb.co/VDkVGfy/pj-savage-collage-2.jpg');
+  background-size:cover;
+  background-position:right;
+  display:flex;
+  justify-content: space-between;
+  align-items:center; 
+}
+
+.banner h2 {
+  font-size:3em;
+  color:#fff; 
+  font-weight:500;
+}
