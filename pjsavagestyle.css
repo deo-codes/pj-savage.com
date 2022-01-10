@@ -1,0 +1,329 @@
+
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Bebas Neue', cursive;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:100px;
+}
+
+.banner{
+  position: relative;
+  min-height: 100vh;
+  background: url('https://i.ibb.co/VDkVGfy/pj-savage-collage-2.jpg');
+  background-size:cover;
+  background-position:right;
+  display:flex;
+  justify-content: space-between;
+  align-items:center; 
+}
+
+.banner h2 {
+  font-size:3em;
+  color:#fff; 
+  font-weight:500;
+  font-family: 'Bebas Neue', cursive; 
+}
+
+.btn{
+  position:relative;
+  background:#2196f3;
+  display:inline-block;
+  color:#fff;
+  margin-top:20px;
+  padding:10px 30px;
+  font-size:18px;
+  text-transform:uppercase;
+  text-decoration:none;
+  letter-spacing:2px;
+  font-weight:500;
+  
+}
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:40px 100px;
+  z-index:1000;
+  display:flex;
+ justify-content:space-between;
+  align-items:center;
+  transition:0.5s
+}
+header.sticky{
+  background:#111;
+  padding: 20px 100px;
+  box-shadow:0 5px 20px rgba(0, 0, 0, 0.1);
+  
+}
+header .logo {
+  line-height: 60px;
+  position: absolute;
+  float: left;
+  margin: 16px 46px;
+
+}
+
+header .sticky .logo{
+  color: #111;
+}
+
+header ul{
+  position:relative;
+  display:flex;
+}
+
+header ul li{
+  position:relative;
+  list-style:none;
+}
+
+header ul li a {
+  position:relative;
+  display:inline-block;
+  margin: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size:25px;
+}
+header.sticky ul li a{
+  color:#fff;
+}
+
+.about{
+  background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('https://i.ibb.co/bB0KxVT/IMG-9937.jpg" alt="IMG-9937');
+    background-size: cover;
+    color: white;
+    padding: 140px;
+}
+
+.content{
+  display:flex;
+  justify-content: space-between;
+}
+
+.contentBx{
+  padding-right: 30px;
+}
+
+.contentBx p{
+  font-size: 24px;
+  margin-bottom:10px;
+  font-family:'Merriweather';
+}
+
+iframe{
+  width:250%;   
+  float:right;
+}
+
+.third{
+  padding:140px;
+}
+
+
+
+.image-list-small {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 640px;
+  padding: 0;
+}
+
+.image-list-small li {
+  display: inline-block;
+  width: 210px;
+  margin: 0 12px 30px;
+}
+
+
+.image-list-small li > a {
+  display: block;
+  text-decoration: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 137px;
+  margin: 0;
+  padding: 0;
+  border: 4px solid #ffffff;
+  outline: 1px solid #d0d0d0;
+  box-shadow: 0 2px 1px #DDD;
+  transition: .25s;
+}
+
+.image-list-small li img{
+    width: 100%; /* To make the images responsive */
+    height: auto;
+}
+
+.image-list-small li > a:hover{
+    transform: scale(1.1);
+    transition: .25s;
+}
+
+.image-list-small .details {
+  margin-top: 13px;
+}
+
+.image-list-small .details h3 {
+  display: block;
+  font-size: 14px;
+  margin: 0 0 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.image-list-small .details h3 a {
+  color: #303030;
+  text-decoration: none;
+}
+
+@media only screen and (max-wdith: 640px){
+.image-list-small{
+   max-width: 100%;
+ }
+.image-list-small li > a {
+   width: 50%;
+ }
+}
+
+.fourth{
+  background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('https://i.ibb.co/Svtn1rq/IMG-2569.jpg');
+    background-size: cover;
+    color: white;
+    padding: 100px;
+}
+
+.fifth{
+  background-image:url('https://i.ibb.co/v3y4m3c/pjsavagewebsiteannoucement.png');
+    background-size: cover;
+    color: white;
+    padding: 140px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.btn-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.myButton {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+
+/*Responsive*/
+@media(max-width:991px)
+{
+  header,
+  header.sticky{
+    padding:20px 50px;
+    z-index:1000;
+  }
+
+  .menu{
+    position:fixed;
+    top: 75px;
+    left:-100%;
+    display:block;
+    padding:100px 50px;
+    text-align: center;
+    width:100%;
+    height:100vh;
+    background:#111;
+    transition: 0.5s;
+    z-index:999;
+    border-top:1px solid rgba(0,0,0,0.2);
+  }
+
+  .menu.active{
+    left:0;
+  }
+  header ul li a{
+    color:#fff;
+    font-size: 24px;
+    margin: 10px;
+
+  }
+  .toggle{
+    width:40px;
+    height:40px;
+    background: url('https://i.ibb.co/nnLfhMx/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  .toggle.active{
+    background: url('https://i.ibb.co/6Ytf3T8/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+
+  header.sticky .toggle{
+    filter:invert(1);
+  }
+
+  section{
+    padding: 100px 50px;
+  }
+
+  .banner{
+    padding: 150px 50px 100px;
+  }
+  .banner h2{
+    font-size:1.5em;
+  }
+
+  .btn{
+    margin-top:10px;
+    padding:10px 20px;
+    font-size:16px;
+  }
+
+  .third .fourth .fifth{
+    margin: 10px;
+  }
+
+ 
+}
+
+
+  
