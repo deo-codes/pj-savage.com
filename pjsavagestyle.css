@@ -121,9 +121,48 @@ header.sticky ul li a{
   font-family:'Merriweather';
 }
 
-iframe{
-  width:250%;   
-  float:right;
+.button-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+#facebook-circle {
+  
+  transition: .2s all ease;
+  height: 60px;
+}
+
+#facebook-circle:hover path {
+  fill:#fff !important;
+}
+
+#twitter-circle {
+  transition: .2s all ease;
+  height: 60px;
+}
+
+#twitter-circle:hover path {
+  fill: #fff !important;
+}
+
+#instagram-circle {
+  transition: .2s all ease;
+  height: 60px;
+}
+
+#instagram-circle:hover path {
+  fill: #fff !important;
+}
+
+#youtube-circle {
+  transition: .2s all ease;
+  height: 60px;
+}
+
+#youtube-circle:hover path {
+  fill: #fff !important;
 }
 
 .third{
@@ -318,12 +357,48 @@ iframe{
     font-size:16px;
   }
 
+  .content{
+    flex-direction: column;
+  }
+
+  .contentBx{
+    margin-bottom: 20px;
+  }
+
   .third .fourth .fifth{
     margin: 10px;
   }
 
+  .heading third {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+ .heading fourth img{
+   width: 250px;
+   height: 100px;
+ }
  
 }
 
+@media (max-width:600px){
+  header,
+  header.sticky{
+    padding:20px 20px;
+  }
+  .banner{
+    padding:150px 20px 100px;
+  }
 
+  section{
+    padding:100px 20px;
+  }
+
+  .heading third {
+    display:flex;
+  justify-content:center;
+  align-items:center;
+  }
+    
+  
+}
   
